@@ -1,8 +1,7 @@
 "use client";
+import { useEffect, useMemo, useState } from "react";
 
-export default function Home() {
-  return (
-   import { useEffect, useMemo, useState } from "react";
+
 
 interface StyleItem {
   id: number;
@@ -11,7 +10,7 @@ interface StyleItem {
   preview: () => JSX.Element;
 }
 
-const Index = () => {
+export default function Home() {
   // SEO
   useEffect(() => {
     document.title = "Vibe Coding Companion — Style Switcher";
@@ -1092,7 +1091,5 @@ const Index = () => {
   );
 };
 
-export default Index;
-    </main>
-  );
-}
+
+
